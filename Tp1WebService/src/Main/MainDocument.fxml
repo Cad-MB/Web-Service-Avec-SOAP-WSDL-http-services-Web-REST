@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.MainController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Text fx:id="title" layoutX="99.0" layoutY="58.0" style="-fx-text-alignment: center;" text="Gestion des articles" textAlignment="CENTER">
+         <font>
+            <Font name="Franklin Gothic Book" size="36.0" />
+         </font>
+         
+      </Text>
+      <VBox layoutX="100.0" layoutY="134.0" prefHeight="200.0" prefWidth="298.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnAjouterArticle" mnemonicParsing="false" onAction="#onClickAjouterArticle" prefHeight="35.0" prefWidth="250.0" text="Ajouter un article">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="15.0" />
+                     </font>
+                  </Button>
+                  <!--
+                  <Button fx:id="btnModifier" mnemonicParsing="false" onAction="#onClickModifier" prefHeight="35.0" prefWidth="250.0" text="Modifier un article">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              
+                              <Button fx:id="btnSupprimer" mnemonicParsing="false" onAction="#onClickSupprimer" prefHeight="35.0" prefWidth="250.0" text="Supprimer un article">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              -->
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="602.0">
+               <children>
+                  <!--
+                   <Button fx:id="btnConsulterArticle" mnemonicParsing="false" onAction="#onClickConsulter" prefHeight="35.0" prefWidth="250.0" text="Consulter un article">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                   </Button>
+                  -->
+                  <Button fx:id="btnConsulterPArticles" mnemonicParsing="false" onAction="#onClickConsulterPArticles" prefHeight="35.0" prefWidth="250.0" text="Consulter la liste des articles">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator layoutX="49.0" layoutY="84.0" prefHeight="4.0" prefWidth="399.0" />
+      <Label layoutX="144.0" layoutY="388.0" text="FARTAS Rafik SITW - 2021/2022" textFill="#808080">
+         <font>
+            <Font name="Franklin Gothic Book" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.2 (UNKNOWN-17d59c9; 2018-09-26T15:16:30-0700) JAXWS-RI/2.3.1 JAXWS-API/2.3.1 JAXB-RI/2.3.1 JAXB-API/2.3.1 svn-revision#unknown. --><xs:schema xmlns:tns="http://tp1/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://tp1/">
+
+<xs:element name="Consulter1Article" type="tns:Consulter1Article"/>
+
+<xs:element name="Consulter1ArticleResponse" type="tns:Consulter1ArticleResponse"/>
+
+<xs:element name="ConsulterListArticle" type="tns:ConsulterListArticle"/>
+
+<xs:element name="ConsulterListArticleResponse" type="tns:ConsulterListArticleResponse"/>
+
+<xs:element name="ajouter_article" type="tns:ajouter_article"/>
+
+<xs:element name="ajouter_articleResponse" type="tns:ajouter_articleResponse"/>
+
+<xs:element name="modifierArticle" type="tns:modifierArticle"/>
+
+<xs:element name="modifierArticleResponse" type="tns:modifierArticleResponse"/>
+
+<xs:element name="supprimerArticle" type="tns:supprimerArticle"/>
+
+<xs:element name="supprimerArticleResponse" type="tns:supprimerArticleResponse"/>
+
+<xs:complexType name="modifierArticle">
+<xs:sequence>
+<xs:element name="nArticle" type="xs:int"/>
+<xs:element name="libelle" type="xs:string" minOccurs="0"/>
+<xs:element name="tva" type="xs:double"/>
+<xs:element name="prix_unit" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifierArticleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="supprimerArticle">
+<xs:sequence>
+<xs:element name="nArticle" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="supprimerArticleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ajouter_article">
+<xs:sequence>
+<xs:element name="libelle" type="xs:string" minOccurs="0"/>
+<xs:element name="tva" type="xs:double"/>
+<xs:element name="prix_unit" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ajouter_articleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Consulter1Article">
+<xs:sequence>
+<xs:element name="libelle" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Consulter1ArticleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ConsulterListArticle">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ConsulterListArticleResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:article" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="article">
+<xs:sequence>
+<xs:element name="libelle" type="xs:string" minOccurs="0"/>
+<xs:element name="libelleProperty" type="xs:string" minOccurs="0"/>
+<xs:element name="numeroArticle" type="xs:int"/>
+<xs:element name="numeroArticleProperty" type="xs:int"/>
+<xs:element name="prixUnit" type="xs:double"/>
+<xs:element name="prixUnitProperty" type="xs:double"/>
+<xs:element name="tva" type="xs:double"/>
+<xs:element name="tvaProperty" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

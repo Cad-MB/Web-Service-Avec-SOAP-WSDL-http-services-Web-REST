@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Tp1WebService.jnlp">
+  <information>
+    <title>Tp1WebService</title>
+    <vendor>ASUS</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Tp1WebService.jar" size="22205" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.19.jar" size="2356711" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="Main.Main"  name="Tp1WebService" />
+  <update check="always"/>
+</jnlp>
